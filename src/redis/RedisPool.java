@@ -1,11 +1,19 @@
 package redis;
 
 import redis.clients.jedis.Jedis;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-/*简单的redis连接池 非线程安全*/
+/**
+ * 为了理解池化技术实现的简单redis连接池 非线程安全
+ * there is an official redis pool
+ *
+ * @see redis.clients.jedis.JedisPool
+ */
+
 class RedisPool {
+
     int max;
     private ArrayList<Jedis> jedises;
     private LinkedList<Jedis> idleJedises = new LinkedList<>();
@@ -13,7 +21,8 @@ class RedisPool {
     int count;
     private String host;
     private int port;
-   public RedisPool(int max, int maxIdle, String host, int port) {
+
+    public RedisPool(int max, int maxIdle, String host, int port) {
         this.max = max;
         jedises = new ArrayList<>(max);
         this.host = host;
@@ -32,18 +41,18 @@ class RedisPool {
         this(12, 8, host, port);
 
     }
-   public RedisPool(String host){
-        this(host,6379);
+
+    public RedisPool(String host) {
+        this(host, 6379);
     }
 
     Jedis getJedis() throws RedisPoolIsFullException {
         if (count < maxIdle) {
             count++;
-            Jedis tmp = idleJedises.removeFirst();
-            return tmp;
+            return idleJedises.removeFirst();
 
         } else if (count < max) {
-            Jedis tmp=new Jedis(host, port);
+            Jedis tmp = new Jedis(host, port);
             jedises.add(tmp);
             count++;
             return tmp;
