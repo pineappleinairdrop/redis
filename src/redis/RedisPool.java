@@ -8,6 +8,7 @@ import java.util.LinkedList;
 /**
  * 为了理解池化技术实现的简单redis连接池 非线程安全
  * there is an official redis pool:
+ *
  * @see redis.clients.jedis.JedisPool
  */
 
@@ -61,7 +62,8 @@ class RedisPool {
         }
     }
 
-    void close(Jedis jedis) {
+    void close(Jedis jedis) throws NoSuchRedisConnection {
+        if (jedis == null) throw new NoSuchRedisConnection("当前并未获取连接");
         if (count > maxIdle) {
             jedises.remove(jedis);
             jedis.close();
@@ -69,5 +71,20 @@ class RedisPool {
             idleJedises.add(jedis);
         }
         count--;
+
+    }
+
+    void releaseRedisPool() {
+        for (Jedis ajedis : jedises) {
+            try {
+                close(ajedis);
+            } catch (NoSuchRedisConnection noSuchRedisConnection) {
+                noSuchRedisConnection.printStackTrace();
+            }
+        }
+        jedises.clear();
+        jedises = null;//help GC
+        idleJedises.clear();
+        idleJedises = null;//help GC ,2
     }
 }

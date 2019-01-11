@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56711315-94c1-433b-b41c-9bfa1e2652b8" name="Default Changelist" comment="">
+    <list default="true" id="56711315-94c1-433b-b41c-9bfa1e2652b8" name="Default Changelist" comment="add som comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redis/JedisClusterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/redis/JedisClusterDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/redis/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redis/RedisConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/redis/RedisConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redis/RedisPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/redis/RedisPool.java" afterDir="false" />
@@ -33,32 +32,32 @@
           <entry key="class" value="39" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="42" />
+          <entry key="java" value="49" />
           <entry key="md" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="39" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="49" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="2590" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="3022" />
+          <entry key="txt" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2590" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="JAVA" value="3022" />
+          <entry key="PLAIN_TEXT" value="76" />
         </counts>
       </usages-collector>
     </session>
@@ -68,11 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redis/RedisPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="220">
+              <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#856#857#0" expanded="true" />
@@ -83,21 +82,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/program files/java/jdk1.8.0_131/src.zip!/java/util/ArrayList.java">
+        <entry file="file://$PROJECT_DIR$/src/redis/NoSuchRedisConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redis/RedisPoolIsFullException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="54">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding>
-                <element signature="e#143#144#0" expanded="true" />
+                <element signature="e#107#108#0" expanded="true" />
+                <element signature="e#127#128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,17 +97,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redis/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="230">
+              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redis/RedisConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="234">
+              <caret line="75" column="72" selection-start-line="75" selection-start-column="72" selection-end-line="75" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -160,10 +151,14 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="pineappleinairdrop &lt;xxbjiy@vip.qq.com&gt;" />
+        <option value="pineappleinairdrop &lt;pineappleinairdrop@vip.qq.com&gt;" />
+        <option value="hxl &lt;xxbjiy@vip.qq.com&gt;" />
         <option value="hxl" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="HierarchyBrowserManager">
     <option name="SCOPE" value="All" />
@@ -181,10 +176,11 @@
         <option value="$PROJECT_DIR$/src/redis/Producer.java" />
         <option value="$PROJECT_DIR$/src/redis/Consumer.java" />
         <option value="$PROJECT_DIR$/src/redis/RedisPoolIsFullException.java" />
-        <option value="$PROJECT_DIR$/src/redis/Main.java" />
-        <option value="$PROJECT_DIR$/src/redis/RedisConnection.java" />
         <option value="$PROJECT_DIR$/src/redis/JedisClusterDemo.java" />
+        <option value="$PROJECT_DIR$/src/redis/Main.java" />
+        <option value="$PROJECT_DIR$/src/redis/NoSuchRedisConnection.java" />
         <option value="$PROJECT_DIR$/src/redis/RedisPool.java" />
+        <option value="$PROJECT_DIR$/src/redis/RedisConnection.java" />
       </list>
     </option>
   </component>
@@ -409,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JedisClusterDemo">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="JedisClusterDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="redis.JedisClusterDemo" />
       <module name="redistest" />
@@ -482,7 +478,7 @@
       <workItem from="1546500378337" duration="5962000" />
       <workItem from="1546564484705" duration="9970000" />
       <workItem from="1547110005139" duration="2258000" />
-      <workItem from="1547168147422" duration="10282000" />
+      <workItem from="1547168147422" duration="13941000" />
     </task>
     <task id="LOCAL-00001" summary="first remote commit">
       <created>1547182457453</created>
@@ -491,11 +487,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547182457453</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add som comments">
+      <created>1547185700981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547185700982</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add som comments">
+      <created>1547186259421</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547186259421</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50721000" />
+    <option name="totallyTimeSpent" value="54380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -508,7 +518,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.50121653" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25204584" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30114567" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34477124" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,7 +546,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first remote commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first remote commit" />
+    <MESSAGE value="add som comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add som comments" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="debuggerHistoryManager">
@@ -578,27 +589,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/jedis-2.9.0.jar!/redis/clients/util/Pool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/jedis-2.9.0.jar!/redis/clients/jedis/JedisPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="165" column="41" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/program files/java/jdk1.8.0_131/src.zip!/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="1489" column="29" selection-start-line="1489" selection-start-column="29" selection-end-line="1489" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/consumerandproducer/Repository.java" />
     <entry file="file://$PROJECT_DIR$/src/Main3.java" />
     <entry file="file://$PROJECT_DIR$/src/redis/Producer.java" />
@@ -846,11 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14756" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -865,12 +850,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/jedis-2.9.0-sources.jar!/redis/clients/util/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1116">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3866">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/program files/java/jdk1.8.0_131/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="971" column="27" selection-start-line="971" selection-start-column="27" selection-end-line="971" selection-end-column="27" />
+          <folding>
+            <element signature="e#36709#36710#0" expanded="true" />
+            <element signature="e#36767#36768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/program files/java/jdk1.8.0_131/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="552" column="16" selection-start-line="552" selection-start-column="16" selection-end-line="552" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/redis/JedisClusterDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redis/RedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,36 +928,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redis/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/redis/NoSuchRedisConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="54">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redis/RedisConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/program files/java/jdk1.8.0_131/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redis/RedisPool.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-          </folding>
+          <caret line="75" column="72" selection-start-line="75" selection-start-column="72" selection-end-line="75" selection-end-column="72" />
         </state>
       </provider>
     </entry>

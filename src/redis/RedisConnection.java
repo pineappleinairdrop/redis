@@ -25,7 +25,7 @@ public class RedisConnection implements Runnable {
         }
     }
 
-    private void releaseConnection() throws InterruptedException {
+    private void releaseConnection() throws InterruptedException, NoSuchRedisConnection {
         synchronized (redisPool) {
             redisPool.close(jedis);
             redisPool.notify();
@@ -35,11 +35,12 @@ public class RedisConnection implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        while (!Thread.currentThread().isInterrupted()) {
             try {
                 getConnection();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Thread.currentThread().interrupt();
+                System.out.println(Thread.currentThread().getName() + " Thread main required stop when waiting for getConnection");
             }
             try {
                 //make more actions to keep connection alive longer
@@ -62,13 +63,18 @@ public class RedisConnection implements Runnable {
                 System.out.println(Thread.currentThread().getName() + " - " + jedis.ping());
                 System.out.println(Thread.currentThread().getName() + " - " + jedis.ping() + "--");
             } catch (NullPointerException e) {
-                e.printStackTrace();
-                System.out.println("当前未获取连接");
+                //e.printStackTrace();
+                System.out.println(Thread.currentThread().getName() + " 当前未获取连接");
             }
             try {
                 releaseConnection();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Thread.currentThread().interrupt();
+                System.out.println(Thread.currentThread().getName() + " Thread main require stop when waiting releaseConnection");
+            } catch (NoSuchRedisConnection noSuchRedisConnection) {
+                //noSuchRedisConnection.printStackTrace();
+                System.out.println(Thread.currentThread().getName() + " " + noSuchRedisConnection.getMessage());
+
             }
 
 
