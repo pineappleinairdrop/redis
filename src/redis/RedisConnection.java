@@ -25,9 +25,14 @@ public class RedisConnection implements Runnable {
         }
     }
 
-    private void releaseConnection() throws InterruptedException, NoSuchRedisConnection {
+    private void releaseConnection() throws InterruptedException {
         synchronized (redisPool) {
-            redisPool.close(jedis);
+            try {
+                redisPool.close(jedis);
+            } catch (NoSuchRedisConnection noSuchRedisConnection) {
+                //noSuchRedisConnection.printStackTrace();
+                System.out.println(Thread.currentThread().getName() + " " + noSuchRedisConnection.getMessage());
+            }
             redisPool.notify();
             redisPool.wait();
         }
@@ -71,10 +76,6 @@ public class RedisConnection implements Runnable {
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 System.out.println(Thread.currentThread().getName() + " Thread main require stop when waiting releaseConnection");
-            } catch (NoSuchRedisConnection noSuchRedisConnection) {
-                //noSuchRedisConnection.printStackTrace();
-                System.out.println(Thread.currentThread().getName() + " " + noSuchRedisConnection.getMessage());
-
             }
 
 

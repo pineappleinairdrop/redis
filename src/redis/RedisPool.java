@@ -71,6 +71,7 @@ class RedisPool {
             idleJedises.add(jedis);
         }
         count--;
+        jedis = null;
 
     }
 
