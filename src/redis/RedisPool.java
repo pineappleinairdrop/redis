@@ -7,8 +7,7 @@ import java.util.LinkedList;
 
 /**
  * 为了理解池化技术实现的简单redis连接池 非线程安全
- * there is an official redis pool
- *
+ * there is an official redis pool:
  * @see redis.clients.jedis.JedisPool
  */
 
